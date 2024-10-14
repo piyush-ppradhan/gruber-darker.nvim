@@ -30,7 +30,8 @@ M.highlights.diagnostic_sign_hint = Highlight.new("DiagnosticSignHint", { link =
 M.highlights.diagnostic_underline_hint =
 	Highlight.new("DiagnosticUnderlineHint", { link = gruber_hl.wisteria_underline })
 
-M.highlights.diagnostic_unnecessary = Highlight.new("DiagnosticUnnecessary", { link = M.highlights.diagnostic_underline_hint })
+M.highlights.diagnostic_unnecessary =
+	Highlight.new("DiagnosticUnnecessary", { link = M.highlights.diagnostic_underline_hint })
 
 ---LspSaga floating windows
 M.highlights.saga_normal = Highlight.new("SagaNormal", { link = vim_hl.normal_float })

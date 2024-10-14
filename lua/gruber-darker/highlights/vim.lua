@@ -85,9 +85,9 @@ M.highlights.more_msg = Highlight.new("MoreMsg", { fg = c["fg+2"] })
 ---'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 M.highlights.non_text = Highlight.new("NonText", { link = M.highlights.end_of_buffer })
 ---Normal text
-M.highlights.normal = Highlight.new("Normal", { fg = c.fg, bg = c.bg })
+M.highlights.normal = Highlight.new("Normal", { fg = c.fg, bg = "#121212" })
 ---Normal text in non-current windows
-M.highlights.normal_non_current = Highlight.new("NormalNC", { fg = c.fg, bg = c.bg })
+M.highlights.normal_non_current = Highlight.new("NormalNC", { fg = c.fg, bg = "#121212" })
 ---Normal text in sidebar
 M.highlights.normal_sidebar = Highlight.new("NormalSB", { fg = c.fg, bg = c["bg-1"] })
 ---Normal text in floating windows.
@@ -173,11 +173,11 @@ M.highlights.string = Highlight.new("String", { fg = c.green, italic = opts.ital
 ---A character constant: 'c', '\n'
 M.highlights.character = Highlight.new("Character", { fg = c.green, italic = opts.italic.strings })
 ---A number constant: 234, 0xff
-M.highlights.number = Highlight.new("Number", { link = gruber_hl.wisteria })
+M.highlights.number = Highlight.new("Number", { fg = "#8ea3a6" })
 ---A boolean constant: TRUE, false
-M.highlights.boolean = Highlight.new("Boolean", { link = gruber_hl.yellow_bold })
+M.highlights.boolean = Highlight.new("Boolean", { fg = "#8ea3a6" })
 ---A floating point constant: 2.3e10
-M.highlights.float = Highlight.new("Float", { link = gruber_hl.wisteria })
+M.highlights.float = Highlight.new("Float", { fg = "#8ea3a6" })
 ---(preferred) any variable name
 M.highlights.identifier = Highlight.new("Identifier", { link = gruber_hl.fg1 })
 ---Function name (also: methods for classes)
